@@ -1,0 +1,206 @@
+
+
+/*
+
+Author: Bootstrapthemes
+Author URI: http://bootstrapthemes.co
+
+*/
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html,
+body {
+    background-color: white;
+    font-size: 15px;
+    color: #565656;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+}
+
+/*==========================================
+PRE LOADER 
+==========================================*/
+
+
+
+.header_top_menu{
+	background:#fff;
+	position:relative;
+}
+
+
+a.navbar-brand.our_logo{
+    position: absolute;
+    left: 0;
+    top: -50px;
+    width: 25%;
+}
+
+.header_top_menu .call_us_text a{
+	color:#666;
+	font-size:15px;
+	margin-left:15px;
+	padding:5px;
+	display:inline-block;
+}
+.header_top_menu .call_us_text a i{
+	color:#e7a331;
+	margin-right:10px;
+	font-size:18px;
+}
+
+.head_top_social a{
+    color: #e7a331;
+    padding: 5px;
+    display: inline-block;
+}
+
+/* main menu */
+.menu-scroll {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    top: 0; 
+	left: 0; 
+	right: 0; 
+	z-index: 300;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-color: #000;
+	height:80px;
+	
+}
+
+.menu-scroll .header_top_menu{
+	display:none;
+}
+.menu-scroll a.navbar-brand.our_logo {
+    top: -16px;
+}
+
+.main_menu_bg{
+	background:rgba(0, 0, 0, .45);
+	height: 80px;
+	
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.container-fluid {
+    margin-top: 15px;
+
+}
+.main_menu_bg li a.booking{
+	border: 1px solid #fff;
+    border-radius: 4px;
+    color: #e7a331 !important;
+    padding: 5px 10px;
+    margin-top: 8px;
+}
+.main_menu_bg li a:hover.booking{
+    color: #da9b31 !important;
+}
+
+.main_menu_bg .navbar {
+   margin-bottom: 0px;
+	
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	color: #da9b31;
+}
+
+/* slider section */
+
+.slider{
+	background:url(../images/bannerbg.jpg) center center no-repeat;
+	background-size:cover;
+}
+.main_slider {
+	
+}
+.main_slider .main_slider_content h1{
+font-size: 6rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    line-height: 6rem;
+    margin:0px 0px 60px 0px;
+}	
+.main_slider_content{
+	padding:250px 0px 200px 0px;
+	width:70%;
+	margin:0 auto;
+	color:#fff;
+}
+
+.slider_overlay{
+	background:rgba(0, 0, 0, .6);
+	width:100%;
+	top:0;
+	left:0;
+}
+
+
+
+#section-about {
+  padding: 8em 0;
+}
+
+#section-about .img {
+  position: relative;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #section-about .img {
+    position: relative;
+    right: inherit;
+  }
+  #section-about .img img {
+    max-width: 100%;
+  }
+}
+
+
+  .menu-item {
+    margin-bottom: 30px;
+  }
+
+  .menu-item img {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .menu-item .menu-price {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .display-4 {
+      font-size: 37px;
+    }
+  }
+  .card-deck {
+  	margin-top: 30px;
+    margin-bottom: 30px;
+
+
+  }
+  .input-group {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .carousel-inner {
+    width: 100%;
+  }
