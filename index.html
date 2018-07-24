@@ -7,7 +7,7 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet"> 
   <!-- Bootstrap core CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
@@ -28,7 +28,7 @@
 <body> 
 
 
-<header>
+<header>  
 
 <html lang="en" class="full-height">
 
@@ -160,77 +160,71 @@
   <h2>My Collection</h2>
 <div class="card-deck" id="myCollection">
 
+
 	</div>
+  <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+    Create Collection
+</button>
 	<!-- Button trigger modal-->
 
 
 <!-- Modal: modalCart -->
-<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <!--Header-->
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Your cart</h4>
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <!--Body-->
-            <div class="modal-body">
-
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Product name</th>
-                            <th>Price</th>
-                            <th>Remove</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Product 1</td>
-                            <td>100$</td>
-                            <td><a><i class="fa fa-remove"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Product 2</td>
-                            <td>100$</td>
-                            <td><a><i class="fa fa-remove"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Product 3</td>
-                            <td>100$</td>
-                            <td><a><i class="fa fa-remove"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Product 4</td>
-                            <td>100$</td>
-                            <td><a><i class="fa fa-remove"></i></a></td>
-                        </tr>
-                        <tr class="total">
-                            <th scope="row">5</th>
-                            <td>Total</td>
-                            <td>400$</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-
+            <div class="modal-body" id="example">
+                ...
             </div>
-            <!--Footer-->
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
-                <button class="btn btn-primary">Checkout</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="selectCollectionButton">Add</button>
             </div>
         </div>
     </div>
 </div>
 <!-- Modal: modalCart -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Create Collection</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="text" id="defaultForm-email" >
+                    <label data-error="wrong" data-success="right" for="defaultForm-email">Collection name</label>
+                </div>
+
+                <div class="md-form mb-4">
+                    <i class="fa fa-lock prefix grey-text"></i>
+                    <input type="text" id="defaultForm-pass" >
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Description</label>
+                </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-default" id="button1">Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <section class="site-section" id="section-about">
       <div class="container">
         <div class="row">

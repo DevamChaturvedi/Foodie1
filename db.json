@@ -19,21 +19,17 @@
   "collections": [
     {
       "id": "1",
+      "collection": "gfdgfd",
       "img": "https://b.zmtcdn.com/data/collections/e140962ec7eecbb851155fe0bb0cd28c_1501223786.jpg",
       "name": "Trending This Week",
       "text": "The most popular restaurants in town this week"
-    },
+    }
+  ],
+  "myCollections": [
     {
-      "id": "52134",
-      "img": "https://b.zmtcdn.com/data/pictures/0/53480/17e726e28a461cfb009375789ca0be62.jpg?output-format=webp",
-      "name": "Pizza Hut",
-      "text": "Pizza, Fast Food, Italian"
-    },
-    {
-      "id": "35",
-      "img": "https://b.zmtcdn.com/data/collections/b5a5caace052be929d9829d32ae1c591_1441697242_l.jpg",
-      "name": "Ramen",
-      "text": "The city's best ramen, and more!"
+      "name": "gfdgfd",
+      "text": "ghghf",
+      "id": 3
     }
   ]
 }

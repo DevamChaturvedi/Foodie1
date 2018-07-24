@@ -18,7 +18,7 @@ body {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Merienda', cursive;
     font-weight: 300;
 }
 
@@ -200,7 +200,4 @@ font-size: 6rem;
   .input-group {
     margin-top: 80px;
     margin-bottom: 30px;
-  }
-  .carousel-inner {
-    width: 100%;
   }
