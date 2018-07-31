@@ -1,158 +1,4 @@
-import "./public/js/topRated/topRated.controller";
-import "./public/js/searchResults/searchResults.controller";
-import "./public/js/myCollections/myCollections.controller"
-
-
-// var top = require('./public/js/topRated/topRated.controller');
-//import './topRated/topRated.controller.js'
-
-/*const topRated = document.getElementById("topRated");
-const url = "https://developers.zomato.com/api/v2.1/collections?city_id=280&count=4";
-
-
-function search(){
-  let searchHeaders = {
-  "user-key": "6735af4836826fc3fd3ac0aa8a760fdd"
-  }
-    const form = document.getElementById('searchForm');
-      const searchItem = document.getElementById("search_item");
-      console.log(searchItem);
-const url1 = `https://developers.zomato.com/api/v2.1/search?q=${form.value}`;
-      $( "#search_item" ).empty();
-      fetch(url1,{
-      method: 'GET',
-      headers: searchHeaders
-      })
-      .then((resp) => resp.json())
-      .then(data => {
-        let restos = data.restaurants; 
-        console.log(restos);
-      return restos.map(restaurants => { */
-      /*const div = document.createElement("div");
-      const div1 = document.createElement('div');
-       
-      img = document.createElement('img');
-      cardBody = document.createElement('div');
-      h5 = document.createElement('h5');
-      p = document.createElement('p');
-      button = createButton("add");
-
-      div.className = "col-lg-3 col-md-6 mb-5";
-      div1.className = "card  narrower restaurants";
-
-      
-      img.className = "card-img-top";
-      cardBody.className = "card-body";
-      h5.className = "card-title";
-      p.className = "card-text";
-      button.className = "btn btn-pink";
-      img.src = restaurants.restaurant.featured_image; 
-      h5.innerHTML = `${restaurants.restaurant.name}` ;
-      p.innerHTML = `${restaurants.restaurant.cuisines}`;
-      button.id = restaurants.restaurant.id;
-      
-      div1.appendChild(img);
-      cardBody.appendChild(h5);
-      cardBody.appendChild(p);
-      cardBody.appendChild(button);
-
-      div1.appendChild(cardBody);
-      div.appendChild(div1);
-      searchItem.appendChild(div);*/
-     /* let searchItem_card = createHTMLElement(`<div class="col-lg-3 col-md-6 mb-5">
-      <div class="card  h-100 restaurants" name=mainCard>
-        <div class="card-body d-flex flex-column" name=cardBody>
-          <img class="card-img-top" src="${collection.collection.image_url}" alt="restaurant">
-          <h5 class="card-title" name="title">${collection.collection.title}</h5>
-          <p class="card-text">${collection.collection.description}</p>
-          <button name="add_button" type="button" class="btn btn-indigo btn-rounded mb-4 mt-auto" data-toggle="modal" data-target="#modalLoginForm" id="${collection.collection.collection_id}" onclick="list_collec(${collection.collection.collection_id})">
-            Add
-          </button>
-        </div>
-      </div>
-    </div>`);
-      topRated.appendChild(topRated_card); 
-
-     const id = button.id;
-        button.onclick = () => {
-            console.log('clicked add from search')
-            list_collection(id);
-        }
-      })
-    })
-}*/
-
-/*
-let myheaders = {
-"user-key": "6735af4836826fc3fd3ac0aa8a760fdd"
-}
-var createButton = html => {
-    const button = document.createElement('button');
-    button.type = "button";
-    button.className = "btn btn-pink mt-auto";
-
-        button.setAttribute("data-toggle", "modal");
-        button.setAttribute("data-target", "#exampleModal")
-
-    button.innerHTML =html;
-    console.log(button)
-    return button;
-} 
-fetch(url,{
-method: 'GET',
-headers: myheaders
-})
-.then((resp) => resp.json())
-.then(data => {
-  let restos = data.collections; 
-return restos.map(collection => {*/
-    /*const div = document.createElement("div");
-    const img = document.createElement('img');
-    const cardBody = document.createElement('div');
-    const h5 = document.createElement('h5');
-    const p = document.createElement('p');
-    button = createButton("add");
-    div.className = "collection card";
-    img.className = "card-img-top";
-    cardBody.className = "card-body";
-    h5.className = "card-title";
-    p.className = "card-text";
-    img.src = collection.collection.image_url;
-    h5.innerHTML = `${collection.collection.title}` ;
-    p.innerHTML = `${collection.collection.description}`;
-    button.id = collection.collection.collection_id;
-
-    cardBody.appendChild(h5);
-    cardBody.appendChild(p);
-    cardBody.appendChild(button);
-    div.appendChild(img);
-    div.appendChild(cardBody);
-    topRated.appendChild(div);*/
-  /*  let topRated_card = createHTMLElement(`<div class="col-lg-3 col-md-6 mb-5">
-      <div class="card  h-100 restaurants" name=mainCard>
-        <div class="card-body d-flex flex-column" name=cardBody>
-          <img class="card-img-top" src="${collection.collection.image_url}" alt="restaurant">
-          <h5 class="card-title" name="title">${collection.collection.title}</h5>
-          <p class="card-text">${collection.collection.description}</p>
-          <button name="add_button" type="button" class="btn btn-indigo btn-rounded mb-4 mt-auto" data-toggle="modal" data-target="#modalLoginForm" id="${collection.collection.collection_id}" onclick="list_collec(${collection.collection.collection_id})">
-            Add
-          </button>
-        </div>
-      </div>
-    </div>`);
-      topRated.appendChild(topRated_card); 
-    const id = button.id;
-    button.onclick = () => {
-      console.log('clicked add')
-      list_collection(id);
-    }
-})
-}) 
-.then(reload());
-*/
-
-
-/*function reload(collectionName){
+function reload(collectionName){
   const myCollection = document.getElementById("example");
     const getUrl = `http://localhost:3000/collections/?collection=${collectionName}`;
     myCollection.innerHTML = "";
@@ -160,8 +6,8 @@ return restos.map(collection => {*/
     .then((resp)=>resp.json())
     .then(data => {
         let collections = data; 
-        return collections.map(collection => {*/
-            /*const div = document.createElement('div');
+        return collections.map(collection => {
+            const div = document.createElement('div');
             const img = document.createElement('img');
             const cardBody = document.createElement('div');
             const h5 = document.createElement('h5');
@@ -181,37 +27,25 @@ return restos.map(collection => {*/
             div.appendChild(img);
             div.appendChild(cardBody);
             cardBody.appendChild(button);
-            myCollection.appendChild(div);*/        
-   /* let myCollections_card = createHTMLElement(`<div class="col-lg-3 col-md-6 mb-5">
-      <div class="card  h-100 restaurants" name=mainCard>
-        <div class="card-body d-flex flex-column" name=cardBody>
-          <img class="card-img-top" src="${collection.img}" alt="restaurant">
-          <h5 class="card-title" name="title">${collection.name}</h5>
-          <p class="card-text">${collection.text}</p>
-          <button name="add_button" type="button" class="btn btn-indigo btn-rounded mb-4 mt-auto" data-toggle="modal" data-target="#modalLoginForm" id="${collection.collection.collection_id}" onclick="list_collec(${collection.collection.collection_id})">
-            Add
-          </button>
-        </div>
-      </div>
-    </div>`);
-      myCollection.appendChild(myCollections_card); 
+            myCollection.appendChild(div);       
+   
 const id = button.id;
             button.onclick = () => {
                 deleteRestaurant(id);
             }
         })
     })
-}*/
+}
 
 
-/*function createHTMLElement(html) {
+function createHTMLElement(html) {
   const template = document.createElement('template');
   template.innerHTML = html;
   return template.content.firstElementChild;
-} */
+} 
 
 
-/*function addCollection(id){
+function addCollection(id){
     const div = document.getElementById(id).parentElement.parentElement;
     console.log(div);
     const img = div.firstChild;
@@ -409,9 +243,9 @@ function toReshow(){
                       Delete
                   </button>
             `);
-            const button2 = deleteData;*/
+            const button2 = deleteData;
 
-            /*div1.className = "col-lg-3 col-md-6 mb-5";
+            div1.className = "col-lg-3 col-md-6 mb-5";
             div.className = "collection card h-100";
             cardBody.className = "card-body d-flex flex-column";
 
@@ -431,24 +265,8 @@ function toReshow(){
             cardBody.appendChild(button2);
             div.appendChild(cardBody);
             div1.appendChild(div);
-            demoCollection.appendChild(div1);*/
-           /* let demoCollection_card = createHTMLElement(`<div class="col-lg-3 col-md-6 mb-5">
-      <div class="card  h-100 restaurants" name=mainCard>
-        <div class="card-body d-flex flex-column" name=cardBody>
-          
-          <h5 class="card-title" name="card-title">${collection.name}</h5>
-          <p class="card-text">${collection.text}</p>
-          <button type="button" class="btn btn-pink mt-auto" data-toggle="modal" data-target="#exampleModal" id="viewButton">
-                      View All
-                  </button>
-                  <button type="button" class="btn btn-pink mt-auto" id="deleteButton">
-                      Delete
-                  </button>
-
-        </div>
-      </div>
-    </div>`);
-      demoCollection.appendChild(demoCollection_card); 
+            demoCollection.appendChild(div1);
+            
 
 
             const id = button2.id;
@@ -475,4 +293,4 @@ function deleteRestaurant(id){
 
     fetch(deleteUrl, fetchData)
     .then(toReshow());
-} */
+} 

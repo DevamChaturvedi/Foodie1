@@ -18,11 +18,11 @@
   },
   "collections": [
     {
-      "id": "1",
+      "id": "52134",
       "collection": "gfdgfd",
-      "img": "https://b.zmtcdn.com/data/collections/e140962ec7eecbb851155fe0bb0cd28c_1501223786.jpg",
-      "name": "Trending This Week",
-      "text": "The most popular restaurants in town this week"
+      "img": "https://b.zmtcdn.com/data/pictures/0/53480/17e726e28a461cfb009375789ca0be62.jpg",
+      "name": "Pizza Hut",
+      "text": "Pizza, Fast Food, Italian"
     }
   ],
   "myCollections": [
@@ -30,6 +30,16 @@
       "name": "gfdgfd",
       "text": "ghghf",
       "id": 3
+    },
+    {
+      "name": "fsdf",
+      "text": "ggsfgsfg",
+      "id": 4
+    },
+    {
+      "name": "sdfsd",
+      "text": "adfad",
+      "id": 5
     }
   ]
 }

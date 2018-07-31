@@ -1,26 +1,20 @@
- 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Font Awesome -->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
-  <!-- Bootstrap core CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet"> 
+ 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
+ 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-	<link rel="stylesheet" href="./animate.css" />
+	
         <link rel="stylesheet" href="./plugins.css" />
-
-        <!--Theme custom css -->
-            
-
-        <!--Theme Responsive css-->
         <link rel="stylesheet" href="./responsive.css" />
 
 
@@ -29,11 +23,11 @@
 <body> 
 
 
-<header>
+<header>  
 
 <html lang="en" class="full-height">
 
-<!--Main Navigation-->
+
 <header>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -47,34 +41,73 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
+                    <a class="nav-link" href="#">Features</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="view intro-2" style="background-image: url('C:/Users/devchatu/Downloads/vagrant-ubuntu-xenial-node-8-master/vagrant-ubuntu-xenial-node-8-master/workspace/static-web-boilerplate/img/img1.jpg'">
-        <div class="full-bg-img" >
-            <div class="mask rgba-purple-light flex-center">
-                <div class="container text-center white-text wow fadeInUp">
-                    <h2></h2>
-                    <br>
-                    <h5></h5>
-                    <p></p>
-                    <br>
-                    <p> </p>
-                </div>
+    
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="view">
+                <img class="d-block w-100" src="img1.jpg" alt="First slide">
+                <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive"><i>Deliciuos Food</i></h3>
+                <p>Delivered to your doorstep</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            
+            <div class="view">
+                <img class="d-block w-100" src="img2.jpg" alt="Second slide">
+                <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive"><i>With good spirits</i></h3>
+                <p>Happy date nights</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+           
+            <div class="view">
+                <img class="d-block w-100" src="img3.jpg" alt="Third slide">
+                <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive"><i>Delivering good flavours</i></h3>
+                <p>Anytimes</p>
             </div>
         </div>
     </div>
+    
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+</div>
+
 
 </header>
-<!--Main Navigation-->
 
-<!--Main Layout-->
 <main class="text-center py-5">
 
     <div class="container">
@@ -88,7 +121,7 @@
     </div>
 
 </main>
-<!--Main Layout-->
+
 
 </header> 
  
@@ -109,9 +142,73 @@
 </div>
 </main>
 
+<h2>Top Rated Collection</h2>
 <div class="card-deck" id="topRated">
 
 </div> 
+
+
+  <h2>My Collection</h2>
+<div class="card-deck" id="myCollection">
+
+
+	</div>
+  <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+    Create Collection
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="example">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="selectCollectionButton">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal: modalCart -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Create Collection</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="text" id="defaultForm-email" >
+                    <label data-error="wrong" data-success="right" for="defaultForm-email">Collection name</label>
+                </div>
+
+                <div class="md-form mb-4">
+                    <i class="fa fa-lock prefix grey-text"></i>
+                    <input type="text" id="defaultForm-pass" >
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Description</label>
+                </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-default" id="button1">Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <section class="site-section" id="section-about">
       <div class="container">
         <div class="row">
@@ -355,6 +452,132 @@
         </div>
       </div>
     </section>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Foodie</h6>
+          <p>Making your life easier is our top priority. Five-star service gets you what you need, right when you need it.</p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+          
+          <p>
+            <a href="#!">Foods&Foods</a>
+          </p>
+          <p>
+            <a href="#!">DoorDash</a>
+          </p>
+          <p>
+            <a href="#!">Zomato</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+          <p>
+            <a href="#!">Your Account</a>
+          </p>
+          <p>
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+        </div>
+
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+          <p>
+            <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Footer links -->
+
+      <hr>
+
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
+
+         
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+  </footer>
+  <!-- Footer -->
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
